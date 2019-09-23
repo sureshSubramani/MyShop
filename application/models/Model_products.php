@@ -45,7 +45,6 @@ class Model_products extends CI_Model
 	public function getProductDataByCat($cat_id = null)
 	{
 		if($cat_id) {
-
 			$user_id = $this->session->userdata('id');
 			if($user_id == 1) {
 				$sql = "SELECT * FROM products ORDER BY id DESC";
@@ -77,9 +76,7 @@ class Model_products extends CI_Model
 					}
 				}
 
-				return $data;		
-
-
+				return $data;
 			}
 		}	
 	}
@@ -108,9 +105,7 @@ class Model_products extends CI_Model
 			}
 
 			return $data;			
-		}
-
-		
+		}		
 	}
 
 	public function create($data)

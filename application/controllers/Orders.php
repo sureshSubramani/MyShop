@@ -230,9 +230,7 @@ class Orders extends Admin_Controller
 
     		$this->data['order_data'] = $result;
 
-        	$this->data['products'] = $this->model_products->getActiveProductData();      	
-
-        	
+        	$this->data['products'] = $this->model_products->getActiveProductData();       	
 
             $this->render_template('orders/edit', $this->data);
         }

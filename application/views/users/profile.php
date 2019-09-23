@@ -1,5 +1,4 @@
 
-
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -22,13 +21,13 @@
 
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Profile XXX</h3>
+              <h3 class="box-title">Profile</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
               <table class="table table-bordered table-condensed table-hovered">
                 <tr>
-                  <th>Username</th>
+                  <th>User Name</th>
                   <td><?php echo $user_data['username']; ?></td>
                 </tr>
                 <tr>

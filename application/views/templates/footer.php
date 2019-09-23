@@ -1,11 +1,11 @@
 
   <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 0.1.0
-    </div>
+    <div class="text-center">
     <strong>Copyright &copy; 2018 - <?php echo date('Y'); ?>.</strong> All rights
     reserved.
   </footer>
+    </div>
+    
 
   <!-- Add the sidebar's background. This div must be placed
        immediately after the control sidebar -->

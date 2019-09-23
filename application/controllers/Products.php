@@ -126,7 +126,6 @@ class Products extends Admin_Controller
                     
                     <div class="wrapper">
                       <section class="invoice">
-
                         <div class="row">
                         ';
                             foreach ($result as $k => $v) {
@@ -154,8 +153,7 @@ class Products extends Admin_Controller
                                     $html .='</div>
                                         
                                 </div>';
-                            }
-                        
+                            }                        
 
                         $html .='
                         </div>
@@ -165,9 +163,9 @@ class Products extends Admin_Controller
                 </body>
             </html>';
 
-                      echo $html;
+        echo $html;
+    
     }
-
     /*
     * If the validation is not valid, then it redirects to the create page.
     * If the validation for each input field is valid then it inserts the data into the database 
@@ -236,7 +234,7 @@ class Products extends Admin_Controller
         $config['allowed_types'] = 'gif|jpg|png';
         $config['max_size'] = '1000';
 
-        // $config['max_width']  = '1024';s
+        // $config['max_width']  = '1024';
         // $config['max_height']  = '768';
 
         $this->load->library('upload', $config);
@@ -255,7 +253,6 @@ class Products extends Admin_Controller
             return ($data == true) ? $path : false;            
         }
     }
-
     /*
     * If the validation is not valid, then it redirects to the edit product page 
     * If the validation is successfully then it updates the data into the database 
@@ -286,7 +283,6 @@ class Products extends Admin_Controller
                 'store_id' => json_encode($this->input->post('store')),
                 'active' => $this->input->post('active'),
             );
-
             
             if($_FILES['product_image']['size'] > 0) {
                 $upload_image = $this->upload_image();
